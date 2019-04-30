@@ -20,6 +20,7 @@ def merge(arrA, arrB):
         else:
             merged_arr[i] = arrB[b]
             b += 1
+
     return merged_arr
 
 
@@ -30,6 +31,7 @@ def merge_sort(arr):
         left = merge_sort(arr[0: len(arr) // 2])
         right = merge_sort(arr[len(arr) // 2:])
         arr = merge(left, right)
+
     return arr
 
 
